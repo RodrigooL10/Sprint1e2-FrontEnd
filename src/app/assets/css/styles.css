@@ -1,0 +1,36 @@
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+
+.logo_name{
+    font-size: 19px;
+    text-align: center;
+    margin-top: 0px;    
+}
+
+.subtitulo {
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.subtitulo1 {
+    font-size: 25px;
+    font-family: Arial;
+    margin: 15px;
+}
+
+.text_column {
+    font-size: 23px;
+    text-align: justify;
+    margin: 15px;
+}
