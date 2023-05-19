@@ -8,6 +8,60 @@ li {
     margin-bottom: 10px;
 }
 
+#logo_acesso {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    align-self: center;
+    margin-top: 90%;
+}
+
+#fundo_index {
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.index {
+    background-image: none;
+}
+
+#div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1::before {
+    position: absolute;
+    z-index: 1; 
+    opacity: 0.5;
+}
+
+#div img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#div1 p {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+
 .logo{
     display: block;
     margin: auto;
@@ -18,7 +72,8 @@ li {
 .logo_name{
     font-size: 19px;
     text-align: center;
-    margin-top: 0px;    
+    margin-top: 0px;
+    color: white;    
 }
 
 .subtitulo {
@@ -36,6 +91,10 @@ li {
     color: white;
 }
 
+h4 {
+    color: white;
+}
+
 .text_column {
     font-size: 23px;
     text-align: justify;
@@ -48,30 +107,30 @@ li {
     height: 50px;
     margin: auto;
     display: block;
-  }
+}
 
-  #menu {
+#menu {
     display: flex;
     margin: 0 auto;
     width: 1300px;
     height: 50px;
     background-color: #68f056;
     border:1px solid black;
-  }
+}
 
-  #menu ul li {
+#menu ul li {
     list-style: none;
     display: inline;
     padding: 10px;
-  }
+}
 
-  #menu ul li a {
+#menu ul li a {
     font-size: 20px;
     font-family: Arial;
     color: black;
     text-decoration: none;
     padding: 1px 5px;
-  }
+}
 
 #menu ul li a:hover{
     background-color: rgb(83, 72, 233);
@@ -83,4 +142,18 @@ li {
 #logo_ibm{
     display: flex;
     margin: 0 auto;
+}
+
+#img_problema {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer {
+    height:35px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
 }
