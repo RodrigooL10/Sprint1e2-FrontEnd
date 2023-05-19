@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'montserrat-txt';
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
 body{
     background-image: linear-gradient(rgb(58, 58, 58), rgb(0, 0, 0));
 
@@ -19,10 +29,11 @@ li {
     margin: 0 auto;
     align-self: center;
     margin-top: 90%;
+    border: 2px white solid;
 }
 
 #fundo_index {
-    opacity: 0.6;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,6 +45,7 @@ li {
 
 .index {
     background-image: none;
+    background-color: black;
 }
 
 #div1 {
@@ -42,24 +54,13 @@ li {
     align-items: center;
 }
 
-#div1::before {
-    position: absolute;
-    z-index: 1; 
-    opacity: 0.5;
-}
-
-#div img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-}
-
-#div1 p {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+#txt_inicio {
+    text-decoration: dashed;
+    color: white;
     text-align: center;
     font-size: 25px;
-    font-family: Arial;
+    font-family: 'montserrat';
+    display: inline-block;
 }
 
 .logo{
@@ -73,12 +74,13 @@ li {
     font-size: 19px;
     text-align: center;
     margin-top: 0px;
-    color: white;    
+    color: white;
+    font-family: 'montserrat';    
 }
 
 .subtitulo {
     font-size: 30px;
-    font-family: Arial;
+    font-family: 'montserrat';
     font-weight: bold;
     margin: 15px;
     color:white
@@ -86,7 +88,7 @@ li {
 
 .subtitulo1 {
     font-size: 25px;
-    font-family: Arial;
+    font-family: 'montserrat';
     margin: 15px;
     color: white;
 }
@@ -97,6 +99,7 @@ h4 {
 
 .text_column {
     font-size: 23px;
+    font-family: 'montserrat-txt';
     text-align: justify;
     margin: 15px;
     color:white;
@@ -112,36 +115,44 @@ h4 {
 #menu {
     display: flex;
     margin: 0 auto 100px auto;
-    width: 1300px;
+    width: 1350px;
     height: 50px;
-    background-color: #68f056;
+    background-color: #2b9356;
     border:1px solid black;
 }
 
 #menu ul li {
-    list-style: none;
     display: inline;
     padding: 10px;
+    list-style: none;
 }
 
 #menu ul li a {
     font-size: 20px;
-    font-family: Arial;
-    color: black;
+    font-family: 'montserrat';
+    color: white;
     text-decoration: none;
     padding: 1px 5px;
 }
 
 #menu ul li a:hover{
-    background-color: rgb(83, 72, 233);
-    color: rgb(255, 255, 255);
-    padding: 1px;
+    background-color: #68f056;
+    color: black;
     cursor: pointer;
 }
 
 #logo_ibm{
     margin: 20px 20px 0 20px;
     float:left;
+}
+
+footer {
+    height:35px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'montserrat-txt';
 }
 
 #img_problema {
@@ -151,44 +162,96 @@ h4 {
     margin: 20px 20px 0 20px;
 }
 
-footer {
-    height:35px;
-    background-color: rgb(56, 56, 56);
-    color: white;
-    text-align: center;
-}
-
 .problema {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .problema p {
     margin-top: 30px;
     text-align: justify;
-    max-width: 1880px;
+    max-width: 1920px;
 }
 
 .cliente {
-    margin-bottom:100px;
+    margin-bottom:120px;
 }
 
 .cliente p {
     margin-top: 30px;
     text-align: justify;
-    max-width: 1880px;
+    max-width: 1920px;
 }
 
 #img_solucao {
     height: 200px;
-    width: 300px;
+    width: 340px;
     float:left;
     margin: 20px 20px 0 20px;
 }
 
 .solucao {
-    margin-bottom: 200px;
+    margin-bottom: 280px;
 }
 
 .solucao p {
     margin-top: 30px;
+    text-align: justify;
+    max-width: 1920px;
+}
+
+#dores_img {
+    height: 200px;
+    width: 340px;
+    float:left;
+    margin: 20px 20px 0 20px;
+}
+
+.dores {
+    margin-bottom: 240px;
+}
+
+.dores p {
+    margin-top: 30px;
+    text-align: justify;
+    max-width: 1920px;
+}
+
+#imp_neg_img {
+    height: 200px;
+    width: 340px;
+    float:left;
+    margin: 20px 20px 0 20px;
+}
+
+#impactos_negativos {
+    margin-bottom: 145px;
+}
+
+#impactos_negativos p {
+    margin-top: 30px;
+    text-align: justify;
+    max-width: 1920px;
+}
+
+#imp_pos_img {
+    height: 200px;
+    width: 340px;
+    float:left;
+    margin: 20px 20px 0 20px;
+}
+
+#impactos_positivos {
+    margin-bottom: 160px;
+}
+
+#impactos_positivos p {
+    margin-top: 30px;
+    text-align: justify;
+    max-width: 1920px;
+}
+
+#nomes {
+    list-style-type: square;
+    color: white;
+    font-family: 'montserrat-txt';
 }
