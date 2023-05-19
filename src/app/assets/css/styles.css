@@ -111,7 +111,7 @@ h4 {
 
 #menu {
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
     width: 1300px;
     height: 50px;
     background-color: #68f056;
@@ -140,15 +140,15 @@ h4 {
 }
 
 #logo_ibm{
-    display: flex;
-    margin: 0 auto;
+    margin: 20px 20px 0 20px;
+    float:left;
 }
 
 #img_problema {
     height: 200px;
-    width: 300px;
-    display: flex;
-    margin: 0 auto;
+    width: 340px;
+    float:left;
+    margin: 20px 20px 0 20px;
 }
 
 footer {
@@ -156,4 +156,39 @@ footer {
     background-color: rgb(56, 56, 56);
     color: white;
     text-align: center;
+}
+
+.problema {
+    margin-bottom: 100px;
+}
+
+.problema p {
+    margin-top: 30px;
+    text-align: justify;
+    max-width: 1880px;
+}
+
+.cliente {
+    margin-bottom:100px;
+}
+
+.cliente p {
+    margin-top: 30px;
+    text-align: justify;
+    max-width: 1880px;
+}
+
+#img_solucao {
+    height: 200px;
+    width: 300px;
+    float:left;
+    margin: 20px 20px 0 20px;
+}
+
+.solucao {
+    margin-bottom: 200px;
+}
+
+.solucao p {
+    margin-top: 30px;
 }
